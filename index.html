@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Flexbox</title>
+    <style>
+        body{
+            background-color:grey;
+            margin: 0;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            text-align: center;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            padding: 10px;
+            width: 300px;
+            font-style: italic;
+            color: yellow;
+            background-color: maroon;
+            margin-top: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px
+        }
+        .container > img{
+            border: 2px solid #EEEEEE;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+     <h1>Images Folder File</h1>
+     <div class="container">
+        <img src="./Images/1.jpg" alt="My photos">
+        <img src="./Images/2.jpg" alt="My photos">
+        <img src="./Images/3.jpg" alt="My photos">
+        <img src="./Images/5.jpg" alt="My photos">
+        <img src="./Images/6.jpg" alt="My photos">
+        <img src="./Images/7.jpg" alt="My photos">
+     </div>
+</body>
+</html>
